@@ -1,18 +1,14 @@
-const crypto = require('crypto');
-
 
 
 module.exports = {
 
     create(request, response){
         const { name, cpf, office, sex, salary, city, email, contact } = request.body;
-        const id = crypto.randomBytes(4).toString('HEX');
         /*Função para salvar no banco de dados*/
         console.log(`
         Registered Successfully!
         
         Your name is: ${name}
-        Your ID: ${id}
         Your office: ${office}
         Your salary: ${salary}
         Your city: ${city}

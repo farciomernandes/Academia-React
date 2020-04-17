@@ -12,12 +12,12 @@ routes.post('/sessions', SessionController.create);
 
 routes.get('/client', ClientController.index)
 routes.post('/client', ClientController.create);
-routes.delete('/client/:id', ClientController.delete);
+routes.delete('/client/:cpf', ClientController.delete);
 
 
 routes.get('/office', OfficeController.index);
 routes.post('/office', OfficeController.create);
-routes.delete('/office/:id', OfficeController.delete);
+routes.delete('/office/:cpf', OfficeController.delete);
 
 routes.get('/plans', PlansController.index);
 

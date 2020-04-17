@@ -1,26 +1,23 @@
-const crypto = require('crypto');
-
+const connection = require('../database/connection');
 
 module.exports = {
 
-     create(request, response){ //Cadastrar um novo cliente
-        const {name, sex, cpf, plan, contact, email, city} = request.body;
-        const id = crypto.randomBytes(4).toString('HEX');
+     async create(request, response){ //Cadastrar um novo cliente
+        const {name, sex, cpf, plan, tell, email, city} = request.body;
 
-            console.log(`
-            Registered Successfully!
-            
-            Your name is: ${name}
-            Your city is: ${city}
-            Your ID: ${id}
-            Your sex is: ${sex}
-            Your cpf: ${cpf}
-            Your plan: ${plan}
-            Your tell: ${contact}s
-            Your email: ${email}
-            `)
 
-            return response.json({name, id})
+          await connection('clients').insert({
+               name,
+               city,
+               cpf,
+               plan,
+               sex,
+               tell,
+               email
+          }).catch(error=>{console.log('DEU RUIM' + error)});
+
+
+            return response.json({name, cpf, plan})
      },
      
      index(request, response){ //Recuperar todos os clientes
@@ -35,10 +32,10 @@ module.exports = {
      },
 
      delete(request, response){
-          const { id } = request.params;
+          const { cpf } = request.params;
 
 
-          /*Função de buscar no BD e apagar o ID identico */
+          /*Função de buscar no BD e apagar o cpf identico */
           response.status(204).send();
      }
 }
