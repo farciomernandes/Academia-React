@@ -1,7 +1,7 @@
 
 exports.up = function(knex) {
-  knex.schema.createTable('clients', function(table){
-      table.string('cpf').notNullable();
+ return knex.schema.createTable('clients', function(table){
+      table.string('id').primary();
       table.string('name').notNullable();
       table.string('city').notNullable();
       table.string('sex').notNullable();
@@ -13,5 +13,5 @@ exports.up = function(knex) {
 };
 
 exports.down = function(knex) {
-  knex.schema.dropTable('clients');
+  return knex.schema.dropTable('clients');
 };
