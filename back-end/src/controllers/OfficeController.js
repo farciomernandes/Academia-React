@@ -35,11 +35,24 @@ module.exports = {
         
         return response.json(allOffice);
     },
-    delete(request, response){
-        const { id } = request.params;
+    async delete(request, response){
         
+        const { id } = request.params;
 
-        /*Função de buscar no BD e apagar o ID identico */
-        response.status(204).send();
+        const office = await connection('offices')
+        .where('id', id)
+        .select('id')
+        .first(); //Quando retorna 1
+        console.log('encontrou')
+        console.log(office.name)
+        if( office.id != id){
+            return response.status(401).json({error: "Operation not permitted!"}); //Não autorizado
+        }
+
+        await connection('offices')
+        .where('id', id)
+        .delete();
+        console.log('APAGOU MANO')
+        return response.status(204).send(); //204, quando tem sucesso mas sem recurso para retornar
     }
 }

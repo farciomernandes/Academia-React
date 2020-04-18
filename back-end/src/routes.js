@@ -21,7 +21,7 @@ routes.post('/office', OfficeController.create);
 routes.delete('/office/:id', OfficeController.delete);
 
 routes.post('/training', TrainingController.create);
-//routes.get('/training', TrainingController.index);
+routes.get('/training', TrainingController.index);
 
 
 

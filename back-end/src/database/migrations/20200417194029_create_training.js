@@ -1,7 +1,6 @@
 
 exports.up = function(knex) {
     return knex.schema.createTable('training', function(table){
-        table.increments();
         table.string('monday');
         table.string('tuesday');
         table.string('fourth');

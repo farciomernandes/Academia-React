@@ -30,11 +30,25 @@ module.exports = {
 
      },
 
-     delete(request, response){
+     async delete(request, response){
+
           const { id } = request.params;
 
+        const client = await connection('clients')
+        .where('id', id)
+        .select('id')
+        .first(); //Quando retorna 1
 
-          /*Função de buscar no BD e apagar o id identico */
-          response.status(204).send();
+          console.log(client)
+          
+          if(client.id != id){
+               return response.status(401).json({error:"Operation not permitted!"})
+          }
+
+          await connection('clients')
+          .where('id', id)
+          .delete();
+
+          return response.status(204).send();
      }
 }
