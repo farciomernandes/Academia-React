@@ -30,9 +30,19 @@ module.exports = {
     },
 
     async index(request, response){
-        /*Função para listar todos os funcionários do BD*/
-        const allOffice = await connection('offices').select('*');
+        const { page = 1 } = request.query;
+
+        const [count] = await connection('offices').count();
+
+
+        const allOffice = await connection('offices')
+        .limit(5)
+        .offset((page - 1) * 6)
+        .select('*');
         
+        response.header('QUANTIDADE-OFFICE', count['count(*)'])
+
+
         return response.json(allOffice);
     },
     async delete(request, response){
@@ -53,7 +63,6 @@ module.exports = {
         await connection('offices')
         .where('id', id)
         .delete();
-
         return response.status(204).send(); //204, quando tem sucesso mas sem recurso para retornar
     }
 }

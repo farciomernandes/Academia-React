@@ -8,7 +8,8 @@ module.exports = {
         const {id} = request.params;
         const client_id = id;
 
-        const result = await connection('training').insert({
+
+        await connection('training').insert({
             monday, 
             tuesday, 
             fourth, 
@@ -17,10 +18,9 @@ module.exports = {
             saturday,
             client_id
         }).catch(error => {console.log('DEU RUIM -> ' + error)});
+                
         
-        console.log('DEU CERTO CLÃ! ')
-        
-        return response.json(result);
+        return response.json("FIM, CLIENT_ID: " + client_id);
     },
 
     async index(request, response) { //Retorna apenas 1 treino
@@ -28,15 +28,22 @@ module.exports = {
 
         const id = request.headers.authorization;
 
+
         const trainings = await connection('training')
         .where('client_id', client_id)// ' where '  Quero um ID do banco que seja igual ao que mandei por segundo
-        .select('*')
-        .first()
+        .join('clients', 'clients.id', '=', 'training.client_id')
+        .select([
+            'training.*',
+            'clients.name',
+            'clients.sex',
+            'clients.city',
+            'clients.email',
+            'clients.tell',
+            'clients.id',
+        ])
         .catch(error => { console.log("DEU RUIM = " + error)});
-
-        if(trainings.client_id != id){
-            return response.status(401).json({error: "Operation not permitted!"}); //Não autorizado
-        }
+        
+       
         return response.json(trainings);
 
     },
