@@ -20,12 +20,12 @@ routes.get('/office', OfficeController.index);
 routes.post('/office', OfficeController.create);
 routes.delete('/office/:id', OfficeController.delete);
 
-routes.post('/training', TrainingController.create);
-routes.get('/training', TrainingController.index);
+routes.post('/training/:id', TrainingController.create);
+routes.get('/training/:client_id', TrainingController.index);
+routes.delete('/training/:client_id', TrainingController.delete);
 
 
-
-routes.get('/plans', PlansController.index);
+routes.get('/plans/:id', PlansController.index);
 
 
 

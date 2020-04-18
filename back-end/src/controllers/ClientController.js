@@ -36,10 +36,9 @@ module.exports = {
 
         const client = await connection('clients')
         .where('id', id)
-        .select('id')
+        .select('*')
         .first(); //Quando retorna 1
 
-          console.log(client)
           
           if(client.id != id){
                return response.status(401).json({error:"Operation not permitted!"})
