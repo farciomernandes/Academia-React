@@ -1,0 +1,146 @@
+.name-blue{
+    color: #1071A8;
+}
+p{
+    background: none;
+    color: white;
+    font-size: 23px;
+    padding: 7px;
+}
+h1{
+    font-size: 27px;
+    width: 100%;
+}
+span{
+    background: none;
+}
+.section-container{
+    background: none;
+    width: 100%;
+    max-width: 1360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 38% 1px 1px 1px;
+}
+
+.section-container div{
+    position: relative;
+    top: -300px;
+    left: 350px;
+    background: none;
+ 
+}
+
+.fundo{
+    background-image: url(../../assets/fundo-home.jpg);
+    width: 100%;
+    max-height: 749px;
+    height: 100%;
+}
+.text{
+    width: 100%;
+    max-width: 1360px;
+    height: 100%;
+    max-height: 110px;
+    display: block;
+    text-align: center;
+    margin: 19px auto;
+}
+.esports{
+    background: none;
+    width: 100%;
+    max-width: 1360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.esports h2{
+    text-align: center;
+    font-weight: 500;
+}
+
+.services img{
+    width: 100%;
+    max-width: 120px;
+    margin: 0px 0px 0px 25%;
+    background-color: #1071A8 ;
+}
+.services h2{
+    background-color: #1071A8 ;
+    font-size: 20px;
+}
+.services p{
+    background-color: #1071A8;
+    font-size: 18px;
+}
+.services div{
+    width: 100%;
+    display: table;
+    background-color: #1071A8;
+    margin: 0 auto;
+}
+.services{
+    width: 100%;
+    max-width: 1360px;
+    display: flex;
+    margin: 0 auto;
+    padding: 1%;
+    background-color: #1071A8 ;
+}
+.register h1{
+    margin: 10% 0px 12px 0px;
+    width: 100%;
+    max-width: 1360px;
+    background: none;
+    font-weight: 500;
+}
+.register h2{
+    width: 100%;
+    max-width: 1360px;
+    background: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+button{
+    margin: 4%;
+    width: 250px;
+    font-size: 14px;
+    padding: 10px 25px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 2px solid #3866a3;
+    background: #1071A8;
+    background: linear-gradient(top,  #63b8ee,  #468ccf);
+    background: -ms-linear-gradient(top,  #63b8ee,  #468ccf);
+    background: -webkit-gradient(linear, left top, left bottom, from(#63b8ee), to(#468ccf));
+    background: -moz-linear-gradient(top,  #63b8ee,  #468ccf);
+}
+button:hover{
+    color: #14396a !important;
+    background: #468ccf;
+    background: linear-gradient(top,  #468ccf,  #63b8ee);
+    background: -ms-linear-gradient(top,  #468ccf,  #63b8ee);
+    background: -webkit-gradient(linear, left top, left bottom, from(#468ccf), to(#63b8ee));
+    background: -moz-linear-gradient(top,  #468ccf,  #63b8ee);
+}
+.btn-top{
+    margin: 20% 10% auto;
+    background: #B0C4DE;
+    opacity: 0.4;
+    
+}
+.register{
+    background-image: url(../../assets/homem-fundo.jpg);
+    width: 100%;
+    max-width: 1360px;
+    height:400px;
+    display: block;
+    text-align: center;
+    margin: 5% 0px 0px 0px;
+    padding: 1%;
+}

@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
 }
+
 section{
     background-color: white;
 }
@@ -49,4 +50,8 @@ section{
 }
 .logon-container section.form form a:hover{
     opacity: 0.8;
+}
+.logon-container section.form img{
+    width: 120%;
+    max-width: 290px;
 }

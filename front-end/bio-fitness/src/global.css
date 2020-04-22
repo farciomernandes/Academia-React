@@ -2,13 +2,15 @@
 
 
 *{
-    background-color: #C6E2FF;
+    background-color: #16171B;
     margin: 0;
     padding: 0;
     outline: 0;
     box-sizing: border-box;
 }
- 
+a{
+    text-decoration: none;
+}
 body{
     font: 400 14px Roboto, sans-serif, Helvetica;
     background-color: #C6E2FF;

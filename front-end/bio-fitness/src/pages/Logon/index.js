@@ -15,6 +15,7 @@ export default function(){
 
                 <form>
                 <input placeholder="Your Name" />
+                <br /> <br />
                 <input placeholder="Your ID" />
                 <button className="button" type="submit">Login</button>
 

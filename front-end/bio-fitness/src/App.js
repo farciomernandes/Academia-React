@@ -1,9 +1,8 @@
 import React from 'react';
-import Logon from './pages/Logon';
-import './global.css'
+import HeadWeb from './pages/Home';
 function App() {
   return (
-  <Logon />  
+  <HeadWeb />  
   );
 }
 
