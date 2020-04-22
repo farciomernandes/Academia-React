@@ -8,7 +8,7 @@ import './styles.css'
 
 export default function HomeWeb(){
     return (
-        <div>
+        <div className="principal">
             <div className="fundo">
             <Heade />
             <section className="section-container">
