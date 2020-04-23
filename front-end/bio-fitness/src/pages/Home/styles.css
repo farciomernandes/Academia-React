@@ -1,8 +1,8 @@
 .name-blue{
-    max-width: 1920px;
     color: #1071A8;
 }
 .principal{
+    
     width: 100%;
     max-width: 1920px;
 }
@@ -20,24 +20,34 @@ span{
     background: none;
 }
 .section-container{
+    color: green;
     background: none;
     width: 100%;
     max-width: 1920px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 38% 1px 1px 1px;
+    margin: 24% 1px 1px 1px;
+
 }
 
 .section-container div{
+    display: table;
+    width: 300px;
     position: relative;
-    top: -300px;
-    left: 350px;
+    top: -200px;
+    left: 31%;
     background: none;
- 
+    font-size: medium;
+}
+.section-container div h1{
+    width: 100%;
+    max-width: 350px;
 }
 
+
 .fundo{
+    
     background-image: url(../../assets/fundo-home.jpg);
     width: 100%;
     max-width: 1920px;
@@ -49,9 +59,16 @@ span{
     max-width: 1920px;
     height: 100%;
     max-height: 110px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin: 19px auto;
+    margin: 3% auto;
+    font-size: medium;
+    
+}
+.text div{
+    display: table;
 }
 .esports{
     background: none;
@@ -70,14 +87,18 @@ span{
 .services img{
     width: 100%;
     max-width: 120px;
-    margin: 0px 0px 0px 25%;
+    height: 100%;
+    max-height: 100px;
+    margin: 0 auto;
     background-color: #1071A8 ;
+    
 }
 .services h2{
     background-color: #1071A8 ;
     font-size: 20px;
 }
-.services p{
+.services div p{
+    color: black;
     background-color: #1071A8;
     font-size: 18px;
 }
@@ -95,6 +116,7 @@ span{
     margin: 0 auto;
 }
 .services{
+    
     width: 100%;
     max-width: 1920px;
     display: flex;
@@ -103,6 +125,7 @@ span{
     background-color: #1071A8 ;
 }
 .register h1{
+    
     margin: 10% 0px 12px 0px;
     width: 100%;
     max-width: 1920px;
@@ -119,6 +142,8 @@ span{
     
 }
 button{
+    border: 1px solid yellow;
+
     margin: 4%;
     width: 250px;
     font-size: 14px;
@@ -142,8 +167,12 @@ button:hover{
     background: -moz-linear-gradient(top,  #468ccf,  #63b8ee);
 }
 .btn-top{
+    color: black;
+    height: 100%;
+    max-height: 50px;
     background: #B0C4DE;
-    opacity: 0.4;
+    margin: 20% 0% 0% 0%;
+    opacity: 0.7;
     
 }
 .register{
@@ -155,4 +184,61 @@ button:hover{
     text-align: center;
     margin: 5% 0px 0px 0px;
     padding: 1%;
+    
+}
+
+.plans{
+    
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plans div{
+    padding: 15px;
+    background-color: #1071A8;
+    width: 100%;
+    max-width: 300px;
+    min-height: 530px;
+    margin: 4% auto;
+    display: table;
+    text-align: center;
+    
+}
+.plans h2{
+    color: black;
+    margin: 0 auto;
+    background: none;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.plans h1{
+    
+    margin: 14% 0% 10% 12%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.plans div img{
+    display: flex;
+    background: none;
+    width: 100%;
+    max-width: 35px;
+    height: 100%;
+    max-height:35px;
+}
+.plans div p{
+    
+    margin: 2% 1px 0% 0%;
+    color: #C4C4C4;
+}
+.plans a:hover{
+    background-color: C4C4C4;
+    transition: 0.5s;
 }

@@ -1,8 +1,8 @@
 import React from 'react';
-import HeadWeb from './pages/Home';
+import Home from './pages/Home';
 function App() {
   return (
-  <HeadWeb />  
+  <Home />  
   );
 }
 

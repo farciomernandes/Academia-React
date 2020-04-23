@@ -4,6 +4,8 @@ import dieta from '../../assets/dieta.png';
 import musculacao from '../../assets/musculacao.png';
 import karate from '../../assets/karate.png';
 import esteira from '../../assets/esteira.png';
+import photo from '../../assets/photo.png';
+import Foooter from '../../component/Footer';
 import './styles.css'
 
 export default function HomeWeb(){
@@ -13,12 +15,12 @@ export default function HomeWeb(){
             <Heade />
             <section className="section-container">
                 <div>
-
                 <h1>
                 SHAPE YOUR BODY
                 </h1>
                 <p>
-                <span className="name-blue">START</span> A BUILD YOUR FUTURE 
+                <span className="name-blue">START</span> A BUILD YOUR</p>
+                <p>FUTURE 
                 <span className="name-blue"> WITH US</span>
                 </p>
                 <button className="btn-top">Go to App</button>
@@ -27,10 +29,11 @@ export default function HomeWeb(){
                 </div>
                
             </section>
-        </div>
         <section className="text">
-            <div><h2 className="name-blue">WHAT'S SPECIAL?</h2></div>
-            <div>                <p>THE EVOLUTION OF OUR CUSTOMERS COMES FIRST</p></div>
+            <div>
+                <h2 className="name-blue">WHAT'S SPECIAL?</h2>              
+                <p>THE EVOLUTION OF OUR CUSTOMERS COMES FIRST</p>
+            </div>
                 </section>
             <div className="esports">
                 <section className="services">
@@ -65,6 +68,51 @@ export default function HomeWeb(){
 
             <button>Go to Dowload</button>
             </div>
+
+            <section className="plans">
+            
+            <a href="#">
+                <div>
+                <h2>
+                    Mensal Plan
+                </h2>
+                <h1>$ 50,99</h1>
+                <p>Monday to Saturday</p>
+                <p>2 Daily Hours</p>
+                <p>All Equipment</p>
+                <img src={photo} alt="imagemStatica"/>
+                <button>Enroll Now</button>
+            </div>
+            </a>
+            <a href="#">
+            <div>
+                <h2>Quarterly Plan</h2>
+                <h1>$ 40,99</h1>
+                <p>Monday</p>
+                <p>4 Daily Hours</p>
+                <p>All Equipment</p>
+                <p>Body evaluation bimonthly</p>
+                <p>One plan diet</p>
+                <img src={photo} alt="imagemStatica"/>
+                <button>Enroll Now</button>
+            </div>
+            </a>
+            <a href="#">
+            <div>
+                <h2>Anual Plan</h2>
+                <h1>$ 36,99</h1>
+                <p>Monday to Saturday</p>
+                <p>All hours the day</p>
+                <p>All Equipment</p>
+                <p>Body evaluation mensal</p>
+                <p>Plan diet mensal</p>
+                <img src={photo} alt="imagemStatica"/>
+                <button>Enroll Now</button>          
+            </div>
+            </a>
+            </section>
+            <Foooter />
+        </div>
         </div>
     );
 }
