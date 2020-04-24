@@ -48,9 +48,7 @@ export default function Foooter(){
                   <img src={whats} alt="Whatsapp"/>
                   <p>83 8161-3615</p>
                </div>
-              </div>
-              
-
+            </div>
           </footer>
 
         </div>

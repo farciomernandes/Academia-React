@@ -1,6 +1,4 @@
-*{
-    color: wheat;
-}
+
 p{
     font-size: medium;
 }
@@ -16,7 +14,7 @@ span{
     color: #1071A8;
 }
 .container{
-    
+    background: none;
     width: 100%;
     max-width: 1920px;
     display: table;
@@ -35,7 +33,7 @@ p{
     background: none;
 }
 .faixa{
-    
+
     margin: 7% auto;
     padding: 0.5%;
     background-color: #272727;
@@ -65,21 +63,29 @@ footer{
     align-items: center;
 }
 .redes{
+    margin: 0% 0% 0% 4%;
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
     height: 100%;
     max-height: 350px;
     display: block;
     background: none;
 }
 .redes div{
-    margin: 10%;
+    margin: 3% 0% 0% 20%;
     width: 100%;
     max-width: 350px;
     height: 100%;
     max-height: 70px;
     display: flex;
     background: none;
+    padding: 6% 0% 0% 0%;
+}
+.redes div p{
+    width: 100%;
+    max-width: 200px;
+    display: inline;
+    padding: 0% 0% 0% 3%;
 }
 .redes div img{
     height: 100%;
@@ -88,6 +94,8 @@ footer{
     max-width: 30px;
 }
 .end{
+    
+    background: none;
     margin: 0 auto;
     width: 100%;
     max-width: 1920px;

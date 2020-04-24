@@ -1,0 +1,88 @@
+span{
+    background: none;
+    margin: 0% 0% 0% 1%;
+}
+form{
+    background: none;
+}
+div{
+    background: none;
+}
+.btn-bmi{
+    margin: 7% 0% 0% 27%;
+}
+input{
+    width: 100%;
+    max-width: 300px;
+    margin: 2%;
+    text-align: center;
+}
+hr{
+    border: 0px;
+    height: 100px;
+}
+.head{
+    width: 100%;
+    max-width: 1920px;
+    background: url(../../assets/avaliacao.jpg);
+}
+
+.head hr{
+    background: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 70px;
+    height: 100%;
+    min-height: 150px;
+    max-height: 600;
+}
+.head h2{
+    margin: 15% 0% 0% 0%;
+    background: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+.meio{
+    display: flex;
+}
+.meio section{
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    max-height: 800px;
+    min-height: 577px;
+    display: table;
+}
+.tabela{
+    width: 80%;
+    padding: 2% 1% 0% 1%;
+}
+.meio section table{
+    width: 100%;
+    max-width: 800px;
+    min-width: 300px;
+    height: 60%;
+    max-height: 800px;
+}
+section p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+section h1{
+    width: 100%;
+    max-width: 600px;
+    margin: 6% 0% 3% 5%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+section h2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

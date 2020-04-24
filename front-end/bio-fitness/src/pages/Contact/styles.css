@@ -1,0 +1,103 @@
+span{
+    background: none;
+    margin: 0% 0% 0% 1%;
+}
+hr{
+    border: 0px;
+    height: 100px;
+}
+
+div{
+    background-color: #1071A8;
+}
+.form{
+    display: flex;
+    width: 40%;
+    max-width: 900px;
+    margin: 0% 0% 0% 3%;
+}
+.form button{
+    margin: 5% 0% 6% 40%;
+}
+
+form{
+    background-color: #1071A8;
+    font-family: Roboto, sans-serif, Arial, Helvetica;
+}
+.coment{
+    display: flex;
+    text-align: center;
+    height: 100px;
+}
+input{
+    width: 100%;
+    max-width: 500px;
+    margin: 4% 0% 0% 0%;
+    background-color: #4387AD;
+}
+
+.imagens{
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    background: none;
+    margin: 1% 0% 0% 3%;
+}
+.imagens img{
+    height: 50px;
+    width: 48px;
+}
+button{
+    background: none;
+}
+img{
+    background: none;
+}
+p{
+    background: none;
+}
+.heade{
+    background: url(../../assets/contat.jpg);
+    width: 100%;
+    max-width: 1920px;
+}
+.heade hr{
+    background: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 70px;
+    color: #FFFFFF;    
+    height: 100%;
+    min-height: 150px;
+    max-height: 600;
+}
+.heade h2{
+    margin: 15% 0% 0% 0%;
+    background: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+.contat{
+    display: flex;
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    max-height: 500px;
+}
+.mapa{
+    background-color: #16171B;
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    max-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mapa iframe{
+    margin: 1% 0% 1% 0%;
+}
