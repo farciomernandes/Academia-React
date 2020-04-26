@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Heade from '../../component/Header'
 import Foooter from '../../component/Footer';
 import gps from '../../assets/gps.png';
@@ -7,6 +7,12 @@ import email from '../../assets/mail.png';
 import './styles.css';
 
 export default function Contact(){
+    const [name, setName] = useState('Name');
+    const [mail, setMail] = useState('Email');
+    const [Ebody, setBody] = useState('Comment');
+    const [contato, setContato] = useState('Tell');
+    
+    
     return (
     <div>
         <div className="heade">
@@ -33,13 +39,26 @@ export default function Contact(){
                 </div>
             </section>
             <section className="form">
-                <form>
-                <input placeholder="Name" />
-                <input placeholder="Email" />
-                <input placeholder="Tell" />
+                <form action="http://formspree.io/farciomernandes@gmail.com"
+                method="POST">
+                <input name="Name"
+                value={name}
+                onChange={e => setName(e.target.value)}
+                />
+                <input name="Email"
+                value={mail}
+                onChange={e => setMail(e.target.value)}
+                />
+                <input name="Contato"
+                value={contato}
+                onChange={e => setContato(e.target.value)}
+                />
 
-                <input className="coment" placeholder="Coment" />
-                <button type="submit">Submit</button>
+                <textarea name="Mensagem"
+                value={Ebody}
+                onChange={e => setBody(e.target.value)}
+                />
+                <button type="submit" value="send">Submit</button>
                 </form>
             </section>
             

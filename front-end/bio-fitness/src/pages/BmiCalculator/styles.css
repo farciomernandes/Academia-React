@@ -11,6 +11,10 @@ div{
 .btn-bmi{
     margin: 7% 0% 0% 27%;
 }
+.bmi{
+    display: none;
+    color: #1071A8;
+}
 input{
     width: 100%;
     max-width: 300px;

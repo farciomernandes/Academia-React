@@ -82,7 +82,6 @@ footer{
     padding: 6% 0% 0% 0%;
 }
 .redes div p{
-    width: 100%;
     max-width: 200px;
     display: inline;
     padding: 0% 0% 0% 3%;
@@ -102,7 +101,8 @@ footer{
     display: table;
 }
 .bio{
-    margin: 0% 0% 5% 56%;
+    max-width: 1920px;
+    margin: 6% 0% 5% 18%;
 }
 .copy{
     margin: 0% 0% 0% 30%;

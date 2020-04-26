@@ -1,9 +1,30 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import './styles.css';
 
 import Heade from '../../component/Header';
 import Foooter from '../../component/Footer';
-export default function BMI(){
+function BMI(){
+    const [cor, setCor] = useState('black');
+    
+    const [ativo, setAtivo] = useState('none')
+    const [bmic, setBMIC] = useState(0);
+    const [peso, setPeso] = useState(0); 
+    const [altura, setAltura] = useState(0); 
+    
+    function calcular(){ 
+        let resultado = peso / (Math.pow(altura,2 ))
+            setBMIC(resultado)
+            setAtivo('flex');
+            if( resultado < 18.6 )
+                setCor('green');
+            else if( resultado < 25 )
+                setCor('blue')
+            else if( resultado < 30)
+                setCor('yellow')
+            else
+                setCor('red')
+            }
+
     return(
         <div>
             <div className="head">
@@ -15,7 +36,8 @@ export default function BMI(){
                 <section className="tabela">
                 <span><h2>CHECK YOUR BODY</h2></span>
                 <h1> AVERAGE BMI TABLE</h1>
-                <table border="1">
+                    <h1 className="bmi" style={{display:ativo}}> Your BMI is {bmic}</h1>
+                <table border="1" style={{color:cor}}>
                     <tr>
                         <th>BMI</th>
                         <th>ESTADO DO PESO</th>
@@ -46,11 +68,22 @@ export default function BMI(){
                     ideal weight, above or below the desired weight.</p>
                     
                     <form>
-                    <input type="text" placeholder="Altura/cm"/>
-                    <input type="text" placeholder="Peso/kg"/>
-                    <input type="text" placeholder="Idade"/>
-                    <input type="text" placeholder="Sexo"/>
-                    <button className="btn-bmi" type="Submit">CALCULATE</button>
+                    <input
+                     value={altura}
+                     onChange={e => setAltura(e.target.value)}
+                     name="altura"  
+                     placeholder="Altura/cm"/>
+
+                    <input name="peso" placeholder="Peso/kg"
+                    value={peso}
+                    onChange={e => setPeso(e.target.value)}
+                    />
+                    
+                    <input name="idade" placeholder="Idade"/>
+                    
+                    <input name="sexo" placeholder="Sexo"/>
+                    
+                    <button type="button" className="btn-bmi" onClick={calcular}>CALCULATE</button>
                     </form>
                 </section>
             </div>
@@ -58,3 +91,5 @@ export default function BMI(){
         </div>
     );
 }
+
+export default BMI;
