@@ -1,29 +1,48 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from '../../component/Header';
 import Foooter from '../../component/Footer';
-
+import api from '../../services/api';
 import './styles.css';
 
+
+
 export default function Semana(){
-   const [user, setUser] = useState('Username');
-   const [segunda, setSegunda] = useState('Peito e Triceps');
-   const [terca, setTerca] = useState('Perna e Panturrilha');
-   const [quarta, setQuarta] = useState('Costa e Biceps');
-   const [quinta, setQuinta] = useState('Aeróbico');
-   const [sexta, setSexta] = useState('Peito e Biceps');
-   const [sabado, setSabado] = useState('Funcional')
    
+
+   const [days, setDays] = useState([]);
+   const user = localStorage.getItem('sessionName');
+   const userId = localStorage.getItem('sessionId');
+   useEffect(()=>{
+    api.get(`training/${userId}`,{
+        headers:{
+            Authorization: userId
+        }
+    }).then(response =>{
+        setDays(response.data)
+    })
+   }, [userId])
+
+   function handleDelete(){
+       api.delete(`training/${userId}`,{
+           headers:{
+               Authorization: userId
+           }
+       }).then(alert('Atualize a Página'))
+   }
+
     return (
         <div className="container">
-            <Head />
+                        <Head name={user}></Head> 
+
             <div className="headi">
-                <h1>{user}</h1>
-                    <div>
-                        _____________________________________________________________________________________________________________________________________
-                    </div>
+             _____________________________________________________________________________________________________________________________________
             </div>
-            <table border="1">
-                <tr className="days">
+            <div>
+
+            </div>
+               {days.map(days => (
+                <table border="1">
+                    <tr className="days">
                     <td className="days">Segunda</td>
                     <td className="days">Terça</td>
                     <td className="days">Quarta</td>
@@ -32,14 +51,16 @@ export default function Semana(){
                     <td className="days">Sabádo</td>
                 </tr>
                 <tr>
-                    <td>{segunda}</td>
-                    <td>{terca}</td>
-                    <td>{quarta}</td>
-                    <td> {quinta} </td>
-                    <td> {sexta} </td>
-                    <td> {sabado} </td>
+                    <td>{days.monday}</td>
+                    <td>{days.tuesday}</td>
+                    <td>{days.fourth}</td>
+                    <td> {days.fifth} </td>
+                    <td> {days.friday} </td>
+                    <td> {days.saturday} </td>
                 </tr>
-            </table>
+                </table>
+                   ))}
+                   <button onClick={handleDelete}>Deletar Treino</button>
 
             <Foooter />
         </div>

@@ -1,22 +1,23 @@
 .all{
     background-color: C6E2FF;
     width: 100%;
-    max-width: 480px;
+    max-width: 1920px;
     height: 100vh;
     margin: 0 auto;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
-
-section{
-    background-color: white;
-}
-
-.logon-container{
-    background-color: white;
+.all h1{
     width: 100%;
-    max-width: 350px;
+    margin: 5% 0% 0% 48%;
+    font-size: 8vh;
+}
+.logon-container{
+
+    width: 100%;
+    max-width: 1920px;
     height: 93%;
     margin: 0 auto;
 
@@ -25,33 +26,49 @@ section{
     justify-content: center;
 }
 .logon-container section.form{
-    width: 100%;
-    max-width: 225px;
-    margin-right: 20px;
+    background-color: #B0C4DE;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    height: 70%;
+    margin: 0 auto;
 }
 .logon-container section.form form{
-    background-color: white;
+    margin: 0 auto;
     margin-top: 100px;
+    display: block;
+    
 }
 
 .logon-container section.form form a{
-    background-color: white;
+    background: none;
     display: flex;
     align-items: center;
     margin-top: 12px;
-    color: #41414d;
+    color: black;
     font-size: 12px;
     text-decoration: none;
     font-weight: 500;
-    transition: opacity 0.2s;
+    height: 100%;
+    opacity: 1
+;
 }
 .logon-container section.form form a svg{
+    
     margin-right: 8px;
+    background: none;
 }
-.logon-container section.form form a:hover{
-    opacity: 0.8;
-}
+
 .logon-container section.form img{
+    background: none;
+
     width: 120%;
     max-width: 290px;
+}
+.logon-container button{
+    background: none;
+    width: 100%;
+    max-width: 100px;
+    margin: 1% 0% 0% 32%;
 }

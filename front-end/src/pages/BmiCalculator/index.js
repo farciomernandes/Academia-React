@@ -24,11 +24,11 @@ function BMI(){
             else
                 setCor('red')
             }
-
+            const user = localStorage.getItem('sessionName');
     return(
         <div>
             <div className="head">
-            <Heade />
+            <Heade name={user}></Heade> 
             <h2>CALCULATE <span> BMI</span></h2>
             <hr />
             </div>

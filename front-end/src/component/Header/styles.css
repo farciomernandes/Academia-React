@@ -38,6 +38,11 @@ header section{
     max-width: 300px;
     color: #B0C4DE;
 }
+.welcome{
+    color: #1071A8;
+    font-weight: bold;
+    
+}
 header{
     width: 100%;
     max-width: 1920px;

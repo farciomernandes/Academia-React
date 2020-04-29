@@ -12,11 +12,12 @@ export default function Contact(){
     const [Ebody, setBody] = useState('Comment');
     const [contato, setContato] = useState('Tell');
     
-    
+    const user = localStorage.getItem('sessionName');
+
     return (
     <div>
         <div className="heade">
-        <Heade />
+        <Heade name={user}></Heade> 
         <h2 className="contact">CONTACT <span> US</span></h2>
         <hr/>
         </div>

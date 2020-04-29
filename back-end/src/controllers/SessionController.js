@@ -4,7 +4,7 @@ module.exports = {
     async create(request, response){
         const { id } = request.body;
 
-        const client = await connection('clinets')
+        const client = await connection('clients')
         .where('id', id)
         .select('name')
         .first();

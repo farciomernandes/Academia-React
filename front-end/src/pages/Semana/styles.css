@@ -1,14 +1,12 @@
 .headi h1{
     width: 100%;
     max-width: 1920px;
-    margin: 10% 0% 0% 0%;
-    color: #1071A8;
+    margin: 10% 9% 9% 0%;
 }
 .headi div{
     margin: 1% 0% 10% 0%;
     width: 100%;
     max-width: 1920px;
-    color: whitesmoke;
 }
 table{
     width: 100%;
@@ -23,4 +21,5 @@ td{
     background: none;
     height: 80px;
     background-color: #272727;
+    color: white;
 }

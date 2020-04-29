@@ -1,30 +1,58 @@
-import React from 'react';
-
+import React, {useState} from 'react';
+import {useHistory, Link} from 'react-router-dom';
+import api from '../../services/api'
+import Head from '../../component/Header';
 import {FiLogIn} from 'react-icons/fi';
 
 import './styles.css';
 
-import logo from '../../assets/logo.jpg' 
+
+
 
 export default function(){
+    const [id, setId] = useState('');
+    const history = useHistory();
+
+    async function handleLogin(e){
+        e.preventDefault();
+        
+        try{
+            const response = await api.post('sessions', {id});
+            console.log(response.data.name)
+            
+            localStorage.setItem('sessionId', id);
+            localStorage.setItem('sessionName', response.data.name);
+            history.push('/')
+        }catch(err){
+            alert('Falha no login, tente novamente!')
+        }
+    
+    }
+
     return(
+        <div>
+              <Head name="User" />
         <div className="all">
-        <div className="logon-container">
-            <section className="form">
-                <img src={logo} alt="Bio Fitness" width="100%" />
+        <h1>Log<span>in</span></h1>
 
-                <form>
-                <input placeholder="Your Name" />
-                <br /> <br />
-                <input placeholder="Your ID" />
-                <button className="button" type="submit">Login</button>
+          <div className="logon-container">
 
-                <a href="./register">
+            <section className="form">         
+                <form onSubmit={handleLogin}>
+                
+                <input placeholder="Your ID" value={id}
+                onChange={e => setId(e.target.value)} />
+
+                <button type="submit">Login</button>
+
+                <Link to="/register">
                   <FiLogIn size={16} color="black" />  Sign in
-                </a>
+                </Link>
                 </form>
             </section>
+          </div>
         </div>
-        </div>
+        </div>  
+
     );
 }

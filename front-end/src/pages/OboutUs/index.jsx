@@ -8,10 +8,13 @@ import professional4 from '../../assets/professional4.png';
 import './styles.css'
 
 export default function Obout () {
+
+
+    const user = localStorage.getItem('sessionName');
     return (
         <div>
             <div className="header">
-                <Head/>
+            <Head name={user}></Head> 
                 <h2>OBOUT <span> US</span></h2>
 
                 <hr />

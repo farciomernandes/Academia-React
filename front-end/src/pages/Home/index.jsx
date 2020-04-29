@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Heade from '../../component/Header';
 import dieta from '../../assets/dieta.png';
 import musculacao from '../../assets/musculacao.png';
@@ -9,10 +10,13 @@ import Foooter from '../../component/Footer';
 import './styles.css'
 
 export default function HomeWeb(){
+    const user = localStorage.getItem('sessionName')
+    
     return (
         <div className="principal">
             <div className="fundo">
-            <Heade />
+            <Heade name={user}></Heade> 
+            
             <section className="section-container">
                 <div>
                 <h1>
@@ -23,7 +27,7 @@ export default function HomeWeb(){
                 <p>FUTURE 
                 <span className="name-blue"> WITH US</span>
                 </p>
-                <button className="btn-top">Go to App</button>
+                <a href="/register"><button className="btn-top">Register</button></a>
 
 
                 </div>
@@ -66,7 +70,7 @@ export default function HomeWeb(){
             <h1>DOWNLOAD OUR APP AND CONTACT US NOW FOR MORE OFFERS</h1>
             <h2>WHERE HEALTH AND BEAUTY FITNESS ARE.</h2>
 
-            <button>Go to Dowload</button>
+            <a href="/register"><button>Go to Register</button></a>
             </div>
 
             <section className="plans">

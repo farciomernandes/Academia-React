@@ -1,6 +1,6 @@
 
 p{
-    font-size: medium;
+    font-size: medium ;
 }
 h1{
     font-weight: 300;
@@ -43,7 +43,7 @@ p{
 }
 .faixa p{
     
-    font-size: 16px;
+    font-size: 15px;
 }
 .faixa div{
     display: table;

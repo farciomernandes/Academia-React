@@ -5,8 +5,7 @@ const connection = require('../database/connection');
 module.exports = {
     async create(request, response) {
         const { monday, tuesday, fourth, fifth, friday, saturday } = request.body;
-        const {id} = request.params;
-        const client_id = id;
+        const {client_id} = request.params;
 
 
         await connection('training').insert({
@@ -24,10 +23,7 @@ module.exports = {
     },
 
     async index(request, response) { //Retorna apenas 1 treino
-        const { client_id } = request.params; //Cliente logado
-
-        const id = request.headers.authorization;
-
+        const client_id = request.headers.authorization;
 
         const trainings = await connection('training')
         .where('client_id', client_id)// ' where '  Quero um ID do banco que seja igual ao que mandei por segundo
