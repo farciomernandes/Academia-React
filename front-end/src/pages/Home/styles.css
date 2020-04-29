@@ -2,7 +2,7 @@
     color: #1071A8;
 }
 .principal{
-    
+
     width: 100%;
     max-width: 1920px;
 }
@@ -176,6 +176,7 @@ button:hover{
     
 }
 .register{
+    
     background-image: url(../../assets/homem-fundo.jpg);
     width: 100%;
     max-width: 1920px;
@@ -188,7 +189,7 @@ button:hover{
 }
 
 .plans{
-    
+
     width: 100%;
     max-width: 1920px;
     display: flex;

@@ -1,0 +1,200 @@
+*{
+    font-family: sans-serif;
+    list-style: none;
+    padding: 0; 
+}
+
+.header{
+    background-image: url(../../assets/with\ us.jpg);
+}
+.header hr{
+    background: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 70px;
+    height: 100%;
+    min-height: 150px;
+    max-height: 600;
+}
+.header h2{
+    margin: 15% 0% 0% 0%;
+    background: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+span{
+    background: none;
+    margin: 0% 0% 0% 1%;
+}
+hr{
+    border: 0px;
+    height: 100px;
+}
+
+/******************************/
+
+.Container{
+    float: left;
+    height: 400px;
+    width: 100%;
+    background-color: rgb(48, 47, 47);
+    margin-top: 100px;
+}
+.Container .Item1{
+    width: 35%;
+    margin-left: 50px;
+    margin-top: 35px;
+    float: left;
+
+    height: 340px;
+    background-image: url(../../assets/music1.jpg);
+}
+.Container .Item2{
+    float: right;
+    text-align: center;
+    margin-right: 200px;
+    margin-top: 35px;
+    background: none;
+    
+}
+.Container h2{
+    margin: 5% 15% 5% 20%;
+    background: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+.Container span{
+    background: none;
+    margin: 0% 0% 0% 0%;
+    font-size: 20px;
+}
+
+/**********************************/
+
+.skills{
+    width: 450px;
+    margin-left: 720px;
+    margin-top: 160px;
+    color: white;
+    background: none;
+    
+}
+.skills h3{
+    background: none;
+}
+.skills li{
+    margin: 40px 0;
+    background: none;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+.bar span{
+    height: 4px;
+    float: left;
+    background: #2187e7b3;
+}
+.fisico{
+    width: 90%;
+    animation: fisico 2s; 
+}
+.postura{
+    width: 40%;
+    animation: postura 2s;
+}
+.dedicaçao{
+    width: 80%;
+    animation: dedicaçao 2s;
+}
+@keyframes fisico{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes postura{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes dedicaçao{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+/************************************************/
+
+.NomeFlutuante{
+    margin: 42% 10% 5% 9%;
+    background: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.team{
+    display: flex;
+    justify-content: center;
+}
+.ImagemTeam{
+    width: 215px;
+    height: 300px;
+    margin: 40px;
+    position: relative;
+    text-align: center;
+}
+.team h4{
+    margin: -10% 20% 0% 20%;
+    background: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+.team span{
+    margin: 2% 20% 0% 20%;
+    background: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.team p{
+    margin: 2% 20% 0% 20%;
+    background: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+/**********************************************************/
+
+.Customers h2{
+    color: white;
+    margin: 2% 20% 0% 20%;
+    background: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

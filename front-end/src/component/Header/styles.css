@@ -9,6 +9,35 @@ h1{
 span{
     color: #1071A8;
 }
+.BioFit{
+    opacity: 1;
+}
+header section{
+    background: none;
+    width: 100%;
+    display: flex;
+    margin: 0% 0% 2% 0%;
+}
+.divSolo{
+    display: flex;
+    width: 100%;
+}
+.divSolo section form input{
+    width: 100%;
+    max-width: 600px;
+    opacity: 0.9;
+}
+.divSolo section form{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0% 0% 0% 25%;
+}
+.divSolo section form button{
+    width: 100%;
+    max-width: 300px;
+    color: #B0C4DE;
+}
 header{
     width: 100%;
     max-width: 1920px;

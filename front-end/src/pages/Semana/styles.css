@@ -1,0 +1,26 @@
+.headi h1{
+    width: 100%;
+    max-width: 1920px;
+    margin: 10% 0% 0% 0%;
+    color: #1071A8;
+}
+.headi div{
+    margin: 1% 0% 10% 0%;
+    width: 100%;
+    max-width: 1920px;
+    color: whitesmoke;
+}
+table{
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    max-height: 700px;
+}
+table .days{
+    background-color: #1071A8;
+}
+td{
+    background: none;
+    height: 80px;
+    background-color: #272727;
+}

@@ -55,10 +55,9 @@ module.exports = {
         .first()
         .catch(erro => console.log('erro = ' + erro)); //Quando retorna 1
 
-        console.log(office.name)
-        if( office.id != id){
+        if( office.id != id)
             return response.status(401).json({error: "Operation not permitted!"}); //Não autorizado
-        }
+        
 
         await connection('offices')
         .where('id', id)

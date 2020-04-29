@@ -1,7 +1,7 @@
 
 exports.up = function(knex) {
   return knex.schema.createTable('offices', function(table){
-     table.string('id').notNullable();
+     table.string('id').primary();
      table.string('name').notNullable();
      table.string('office').notNullable();
      table.string('sex').notNullable();

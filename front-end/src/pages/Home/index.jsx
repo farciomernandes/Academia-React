@@ -29,7 +29,7 @@ export default function HomeWeb(){
                 </div>
                
             </section>
-        <section className="text">
+            <section className="text">
             <div>
                 <h2 className="name-blue">WHAT'S SPECIAL?</h2>              
                 <p>THE EVOLUTION OF OUR CUSTOMERS COMES FIRST</p>
@@ -112,7 +112,7 @@ export default function HomeWeb(){
             </a>
             </section>
             <Foooter />
-        </div>
+            </div>
         </div>
     );
 }
