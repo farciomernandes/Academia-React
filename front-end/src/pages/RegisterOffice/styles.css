@@ -1,0 +1,50 @@
+.register-container input{
+    width: 100%;
+    max-width: 1000px;
+    min-width: 300px;
+}
+.register-container{
+    display: flex;
+   
+    width: 100%;
+    max-width: 1920px;
+    margin: 7% 0% 0% 0%;
+    background-color: rgb(30, 101, 194);
+    height: 100%;
+    min-height: 450px;
+}
+.trainer-register{
+    display:flex;
+    align-items: center;
+    justify-items: center;
+    
+}
+.register-container h1{
+    font-size: 40px;
+    margin: 15% 10% 0% 0%;
+}
+.register-container form{
+    margin: 0% 10% 0% 0%;
+}
+.raios{
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.raios input{
+    font-size: medium;
+    height: 15px;
+    margin: 0% 0% 0% 0%;
+}
+.raios section{
+    display: table;
+    background: none;
+}
+.register-container button{
+    color: white;
+    background-color: #16171B;
+}

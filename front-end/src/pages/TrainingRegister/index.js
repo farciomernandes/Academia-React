@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {useHistory} from 'react-router-dom';
-import Head from '../../component/Header';
+import Head from '../../component/HomeOffice';
 
 import './styles.css'
 
@@ -15,8 +15,9 @@ export default function Register(){
     const [saturday, setSaturday] = useState('saturday');
     
     const history = useHistory();
-    const user = localStorage.getItem('sessionName');
-    const userId = localStorage.getItem('sessionId');
+    const officeName = localStorage.getItem('officeName');
+    const [userId, setUserId] = useState('Insert id from client');
+
     async function userRegister(e){
         e.preventDefault();
         
@@ -30,7 +31,7 @@ export default function Register(){
         }
         console.log(data)
         try{
-            const response = await api.post(`training/${userId}`, data);
+            await api.post(`training/${userId}`, data);
 
             alert(`Treino atuaizado com sucesso!`);
             history.push('/semana');
@@ -41,12 +42,18 @@ export default function Register(){
 
     return(
         <div>
-            <Head name={user}></Head> 
+            <Head name={officeName}></Head> 
             <div className="trainer-register">
 
             <section className="register-container">
             <h1>Register Traning</h1>
             <form onSubmit={userRegister}>
+             <input value={userId} 
+            onChange={e => setUserId(e.target.value)} />
+            <br />
+            <br />
+            <br />
+
             <input value={monday} 
             onChange={e=> setMonday(e.target.value)} />
             <br />

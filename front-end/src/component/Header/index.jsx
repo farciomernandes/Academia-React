@@ -6,7 +6,12 @@ import './styles.css';
 
 
 export default function HeadeWeb(props){
-   
+
+    function logout(){
+        localStorage.setItem('sessionId', null);
+        localStorage.setItem('sessionName', 'user');
+   }
+
     return(
         <header>
             <div className="divSolo">
@@ -14,6 +19,7 @@ export default function HeadeWeb(props){
             <section>
             <Link to="/" className="BioFit"><h1>Bio<span> Fitness</span></h1></Link>
             </section>
+            <button onClick={logout}>Exit my count</button>
            </div>
 
             <nav>

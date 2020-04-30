@@ -5,7 +5,6 @@ exports.up = function(knex) {
       table.string('name').notNullable();
       table.string('city').notNullable();
       table.string('sex').notNullable();
-      table.int('plan').notNullable();
       table.int('tell').notNullable();
       table.string('email').notNullable();
   })

@@ -7,7 +7,7 @@ module.exports = {
         const { monday, tuesday, fourth, fifth, friday, saturday } = request.body;
         const {client_id} = request.params;
 
-
+        console.log(client_id)
         await connection('training').insert({
             monday, 
             tuesday, 

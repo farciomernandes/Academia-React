@@ -6,27 +6,24 @@ module.exports = {
 
     async create(request, response){
         const { name, office, sex, salary, city, email, contact } = request.body;
-        /*Função para salvar no banco de dados*/
 
         const id = crypto.randomBytes(4).toString('HEX');
 
+
         await connection('offices').insert({
-            name,
             id,
+            name,
             office,
             sex,
-            salary,
             city,
             email,
-            contact
+            contact,
+            salary
         }).catch(error =>{ console.log('DEU RUIM -> ' + error)});
 
+         return response.json({name, id})
 
-        response.json(`Funcionário Cadastrado
-            ${name}
-            ${office}
-            ${salary}
-            ${city}`);
+
     },
 
     async index(request, response){

@@ -4,34 +4,27 @@ const crypto = require('crypto');
 module.exports = {
 
      async create(request, response){ //Cadastrar um novo cliente
-        const {name, sex, plan, tell, email, city} = request.body;
+        const {name, sex, tell, email, city} = request.body;
           const id = crypto.randomBytes(4).toString('HEX');
 
           await connection('clients').insert({
                name,
                city,
                id,
-               plan,
                sex,
                tell,
                email
           }).catch(error=>{console.log('DEU RUIM -> ' + error)});
 
 
-            return response.json({name, id, plan})
+            return response.json({name, id})
      },
      
      async index(request, response){ //Recuperar todos os clientes
-          const { page = 1 } = request.query;
-
           const [count] = await connection('clients').count();
 
           const clients = await connection('clients')
-          .limit(6)
-          .offset((page - 1) * 6)
           .select('*');
-
-          response.header('QUANTIDADE-CLENT', count['count(*)'])
 
           return response.json(clients);
 

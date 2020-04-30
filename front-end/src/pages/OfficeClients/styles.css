@@ -1,0 +1,48 @@
+.office-container{
+    background-color: #1071A8;
+    height: 30vh;
+}
+.office-container h2{
+    background: none;
+}
+.clientees{
+    border: 1px solid #1071A8;
+}
+.all-clients{
+    background: none;
+    text-align: center;
+    max-width: 1920px;
+}
+.all-clients h1{
+    width: 100%;
+    max-width: 1920px;
+}
+.aloo{
+    width: 100%;
+    max-width: 1920px;
+    display: table;
+    justify-content: center;
+    align-items: center;
+}
+.all-resultados{
+    background: white;
+    height: 100%;
+}
+.resultados{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: none;
+}
+.item{
+    padding: 0% 5% 5% 0%;
+    border: 1px solid black;
+    display: block;
+}
+
+.resultados ul{
+    background: none;
+}
+.resultados li{
+    background: none;
+}

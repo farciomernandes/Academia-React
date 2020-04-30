@@ -9,6 +9,10 @@ import Semana from './pages/Semana';
 import Register from './pages/Register';
 import Login from './pages/Logon';
 import Treinos from './pages/TrainingRegister';
+import RegisterOffice from './pages/RegisterOffice';
+import LoginOffice from './pages/LoginOffice';
+import OfficeController from './pages/OfficeClients';
+import HomeOffice from './pages/HomeOffice';
 
 export default function Routes(){
     return(
@@ -21,7 +25,11 @@ export default function Routes(){
             <Route path="/semana" component={Semana} />
             <Route path="/register" component={Register} />
             <Route path="/login" component={Login} />
-            <Route path="/trainingRegister" component={Treinos} />
+            <Route path="/training-register" component={Treinos} />
+            <Route path="/register-office" component={RegisterOffice} />
+            <Route path="/login-office" component={LoginOffice} />
+            <Route path="/office-clients" component={OfficeController} />
+            <Route path="/office" component={HomeOffice} />
           </Switch>
         </BrowserRouter>
     );
