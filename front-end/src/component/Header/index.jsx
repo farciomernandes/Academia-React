@@ -1,15 +1,17 @@
 import React, { Children } from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
 
 import './styles.css';
 
 
 
 export default function HeadeWeb(props){
-
+    const history = useHistory();
+    
     function logout(){
         localStorage.setItem('sessionId', null);
         localStorage.setItem('sessionName', 'user');
+        history.push('/')
    }
 
     return(
@@ -28,7 +30,7 @@ export default function HeadeWeb(props){
                 <Link to="/bmi-calculator"> BMI CALCULATOR</Link>
                 <Link to="/semana">CALENDARIO SEMANAL</Link>
                 <Link to="/contact">CONTACT</Link>
-                <Link to="/login">LOGIN</Link> 
+                <Link to="/login">LOGIN</Link>
             </nav>
             <hr style={{height: 12}} style={{background: 'none'}}/>
             <p>Welcome<span>{props.name}</span></p>

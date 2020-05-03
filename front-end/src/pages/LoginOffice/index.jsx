@@ -35,7 +35,7 @@ export default function(){
 
     return(
         <div className="all">
-          <Head name="User" />
+          <Head name="user" />
         <h1>Log<span>in</span></h1>
 
           <div className="logon-container">

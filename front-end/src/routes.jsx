@@ -25,11 +25,11 @@ export default function Routes(){
             <Route path="/semana" component={Semana} />
             <Route path="/register" component={Register} />
             <Route path="/login" component={Login} />
+            <Route path="/office" component={HomeOffice} />
             <Route path="/training-register" component={Treinos} />
             <Route path="/register-office" component={RegisterOffice} />
             <Route path="/login-office" component={LoginOffice} />
             <Route path="/office-clients" component={OfficeController} />
-            <Route path="/office" component={HomeOffice} />
           </Switch>
         </BrowserRouter>
     );

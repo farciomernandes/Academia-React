@@ -3,12 +3,14 @@ import {Link} from 'react-router-dom';
 
 import './styles.css';
 
-function logout(){
-    localStorage.setItem('sessionId', null);
-    localStorage.setItem('sessionName', 'user');
+export default function HeadeWeb(props){
+    
+function logoutt(){
+    
+    localStorage.setItem('officeId', null);
+    localStorage.setItem('officeName', 'user');
 }
 
-export default function HeadeWeb(props){
    
     return(
         <header>
@@ -16,7 +18,7 @@ export default function HeadeWeb(props){
 
             <section>
             <Link to="/office" className="BioFit"><h1>Bio<span> Fitness</span></h1></Link>
-            <button className="topoo"nClick={logout}>Exit my acount</button>
+            <button className="topoo" onClick={logoutt}>Exit my acount</button>
             </section>
            </div>
 

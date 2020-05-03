@@ -39,7 +39,7 @@ export default function Register(){
 
     return(
         <div>
-            <Head name="User" />
+            <Head name="user" />
             <div className="trainer-register">
 
             <section className="register-container">

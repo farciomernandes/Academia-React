@@ -49,6 +49,7 @@ module.exports = {
           await connection('clients')
           .where('id', id)
           .delete();
+          console.log('DEU CERTO PARCEIRO, APAGOU O CLIENTE')
 
           return response.status(204).send();
      }

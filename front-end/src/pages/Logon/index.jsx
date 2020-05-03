@@ -31,7 +31,7 @@ export default function(){
 
     return(
         <div>
-              <Head name="User" />
+              <Head name="user" />
         <div className="all">
         <h1>Log<span>in</span></h1>
 
