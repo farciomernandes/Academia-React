@@ -10,4 +10,4 @@ O objetivo desse projeto, além de ser um passa-tempo para quarentena, era de se
 Portanto este projeto é um protótipo realizado durante as primeiras semanas de estudo das tecnologias citadas.
 
 #Detalhes
-O site não focou na estilização, o foco foi o aprendizado 
+O site não focou na estilização, o foco foi o aprendizado da ferramenta.
