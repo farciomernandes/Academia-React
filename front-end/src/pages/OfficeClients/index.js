@@ -76,9 +76,9 @@ export default function OfficeClient(){
                 {clients.map(clients => (
                     <div className="clientees">
                         <br />  Name: {clients.name}
-                          <br />  Id: {clients.id}
-                          <br /> Email: {clients.email}                
-                          <br />Telefone: {clients.tell}
+                        <br />  Id: {clients.id}
+                        <br /> Email: {clients.email}                
+                        <br />Telefone: {clients.tell}
                     </div>
                         
                      

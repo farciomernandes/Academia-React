@@ -27,18 +27,12 @@ module.exports = {
     },
 
     async index(request, response){
-        const { page = 1 } = request.query;
 
-        const [count] = await connection('offices').count();
 
 
         const allOffice = await connection('offices')
-        .limit(5)
-        .offset((page - 1) * 6)
         .select('*');
         
-        response.header('QUANTIDADE-OFFICE', count['count(*)'])
-
 
         return response.json(allOffice);
     },

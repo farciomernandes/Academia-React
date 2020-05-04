@@ -25,7 +25,6 @@ function logoutt(){
             <nav>
                 <Link to="/office">HOME</Link>
                 <Link to="/login-office">LOGIN</Link>
-                <Link to="/register-office">REGISTER OFFICE</Link>
                 <Link to="/office-clients"> CLIENT CONTROLLERS</Link>
                 <Link to="/training-register">UPDATE TRAINING THE CLIENT</Link>
             </nav>

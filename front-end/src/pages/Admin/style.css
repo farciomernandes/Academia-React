@@ -1,0 +1,27 @@
+
+.backMUS{
+    background: url(../../assets/admin.jpg);
+}
+.container-admin{
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    max-height: 1080px;
+    min-height: 700px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30%;
+    padding-top: 10%;
+}
+.luaa{
+    display: flex;
+}
+.title-adminn{
+    width: 100%;
+    max-width: 640px;
+    text-align: center;
+}
+.btn-admin{
+    background-color: aquamarine;
+    margin-left: 25%;
+}

@@ -13,6 +13,8 @@ import RegisterOffice from './pages/RegisterOffice';
 import LoginOffice from './pages/LoginOffice';
 import OfficeController from './pages/OfficeClients';
 import HomeOffice from './pages/HomeOffice';
+import Admin from './pages/Admin';
+import AdminOffices from './pages/AdminOffice';
 
 export default function Routes(){
     return(
@@ -30,6 +32,8 @@ export default function Routes(){
             <Route path="/register-office" component={RegisterOffice} />
             <Route path="/login-office" component={LoginOffice} />
             <Route path="/office-clients" component={OfficeController} />
+            <Route path="/admin" component={Admin} />
+            <Route path="/adminOffices" component={AdminOffices} />
           </Switch>
         </BrowserRouter>
     );
