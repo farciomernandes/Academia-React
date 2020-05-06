@@ -7,9 +7,10 @@
     position: relative;
 }
 .principal{
-
     width: 100%;
     max-width: 1920px;
+    border: px solid green !important;
+
 }
 p{
     background: none;
@@ -20,9 +21,11 @@ p{
 h1{
     font-size: 27px;
     width: 100%;
+    
 }
 span{
     background: none;
+    
 }
 .section-container{
     background: none;
@@ -32,6 +35,8 @@ span{
     top: 200px;
     max-width:20% ;
     left: 65%;
+
+    
 }
 
 .section-container div{
@@ -42,10 +47,12 @@ span{
     left: 31%;
     background: none;
     font-size: medium;
+    
 }
 .section-container div h1{
     width: 100%;
     max-width: 350px;
+    
 }
 
 
@@ -55,6 +62,7 @@ span{
     max-width: 1920px;
     max-height: 749px;
     height: 100%;
+    
 }
 .text{
     width: 100%;

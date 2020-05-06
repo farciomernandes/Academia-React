@@ -8,12 +8,17 @@
     outline: 0;
     box-sizing: border-box;
 }
+header{
+    box-sizing: border-box;
+    width: 100%;
+}
 a{
     text-decoration: none;
 }
 body{
     font: 400 14px Roboto, sans-serif, Helvetica;
     -webkit-font-smoothing: antialiaser;
+    box-sizing: border-box;
 }
 
 input, button, textarea {

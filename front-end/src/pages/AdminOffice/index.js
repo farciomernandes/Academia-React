@@ -8,6 +8,7 @@ export default function AdminOffice(){
     const history = useHistory();
 
     const user = localStorage.getItem("admin");
+    
     const [logado, setLogado] = useState('none');
     const [logadu, setLogadu] = useState('none');
     const [office, setOffice] = useState([]);
@@ -67,6 +68,10 @@ export default function AdminOffice(){
         history.push("admin")
     }
 
+    function newOffice(){
+        history.push("/register-office")
+    }
+
     return(
         <div>
             <div className="title-admin">
@@ -74,6 +79,7 @@ export default function AdminOffice(){
                 <button className="btn" onClick={verificar}>Display Offices</button>
                 <button className="btn" onClick={verificarCli}>Display Clients</button>
                 <button className="btn" onClick={exit}>Exit</button>
+                <button className="btn" onClick={newOffice}>New Office</button>
                 <form onSubmit={deletar} style={{display: logado}}>
                     <input placeholder="Office ID"
                     onChange={e => setId(e.target.value)} />

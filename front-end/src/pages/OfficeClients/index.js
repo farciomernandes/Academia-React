@@ -54,11 +54,6 @@ export default function OfficeClient(){
                 <input value={delet}
                 onChange={e => setDelet(e.target.value)} />
                 <button onClick={handleDelete}>Delete</button>
-
-                <p>Delete My Account</p>
-                <br />
-                <input value={id} />
-                <button onClick={officeDelete}>Delete</button>
             </form>
         <div className="office-container">
             <header className="all-clients">

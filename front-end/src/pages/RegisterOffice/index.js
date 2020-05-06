@@ -15,26 +15,31 @@ export default function Register(){
     const [office, setOffice] = useState('office');
     const [contact, setContact] = useState('contact')
     
+    const user = localStorage.getItem("admin");
 
     async function userRegister(e){
         e.preventDefault();
-        const data ={
-            name,
-            office,
-            sex,
-            salary,
-            city,
-            email,
-            contact
+        if(user == 'lordkinfe'){
+            const data ={
+                name,
+                office,
+                sex,
+                salary,
+                city,
+                email,
+                contact
+            }
+            try{
+                const response = await api.post('office', data);
+    
+                alert(`Seu ID de acesso: ${response.data.id}`);
+            }catch(err){
+                alert('Erro no cadastro, tente novamente!')
+            }
+        }else{
+            alert('Somente ADMINISTRADORES podem registrar funcionários!')
         }
-        try{
-            const response = await api.post('office', data);
-
-            alert(`Seu ID de acesso: ${response.data.id}`);
-            //history.push('/Login-office');
-        }catch(err){
-            alert('Erro no cadastro, tente novamente!')
-        }
+       
     }
 
     return(
@@ -44,6 +49,8 @@ export default function Register(){
 
             <section className="register-container">
             <h1>Register Office</h1>
+
+
             <form onSubmit={userRegister}>
             <input value={name} 
             onChange={e=> setName(e.target.value)} />

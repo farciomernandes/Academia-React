@@ -33,6 +33,10 @@ export default function(){
     
     }
 
+    function contaNova(){
+      alert(`Somente ADMINISTRADORES podem registrar um funcionário!`)
+    }
+
     return(
         <div className="all">
           <Head name="user" />
@@ -48,9 +52,9 @@ export default function(){
 
                 <button type="submit">Login</button>
 
-                <Link to="/register-office">
+                <a onClick={contaNova}>
                   <FiLogIn size={16} color="black" />  Sign in
-                </Link>
+                </a>
                 </form>
             </section>
           </div>

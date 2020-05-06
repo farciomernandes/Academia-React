@@ -1,4 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+.welcomee{
+    width: 40%;
+}
+section{
+    background: none;
+}
+.btn-exit{
+    position: absolute;
+    right: -45px;
+}
 h1{
+    
     font-weight: 500;
     width: 100%;
     max-width: 200px;
@@ -9,11 +23,7 @@ h1{
 span{
     color: #1071A8;
 }
-header p{
-    position: absolute;
-    top: 250px;
-    width: 100%;
-}
+
 .BioFit{
     opacity: 1;
 }
@@ -21,27 +31,13 @@ header section{
     background: none;
     width: 100%;
     display: flex;
-    margin: 0% 0% 2% 0%;
+    
 }
 .divSolo{
     display: flex;
     width: 100%;
-}
-.divSolo section form input{
-    width: 100%;
-    max-width: 600px;
-    opacity: 0.9;
-}
-.divSolo section form{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin: 0% 0% 0% 25%;
-}
-.divSolo section form button{
-    width: 100%;
-    max-width: 300px;
-    color: #B0C4DE;
+    position: relative;
+    right: 10px;
 }
 .welcome{
     color: #1071A8;
@@ -58,15 +54,15 @@ header{
     margin: 1%;
 }
 nav{
-    width: 100%;
-    max-width: 1920px;
-    display: flex;
+    width: 50%;
+    max-width: 1680px;
     align-items: center;
     justify-content: center;
     background: none;
-    margin: 0 auto;
     position: absolute;
     top: 150px;
+    left: -5px;
+    
 }
 a{
     font-size: 20px;
@@ -74,6 +70,7 @@ a{
     padding: 0px 40px;
     color: white;
     opacity:0.5;
+    
 }
 a h1{
     font-size: 40px;
@@ -83,4 +80,5 @@ a:hover{
     -webkit-transform: scale(1.3);
     -ms-transform: scale(1.3);
     transform: scale(1.3);
+    
 }

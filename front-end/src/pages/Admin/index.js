@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './style.css';
 import { useHistory } from 'react-router-dom';
-import OfficeCreate from '../RegisterOffice';
-//<Link to="/register-office">REGISTER OFFICE</Link>
 
 
 export default function Admin(){

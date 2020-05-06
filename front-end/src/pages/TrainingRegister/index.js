@@ -20,24 +20,28 @@ export default function Register(){
 
     async function userRegister(e){
         e.preventDefault();
-        
-        const data ={
-            monday,
-            tuesday,
-            fourth,
-            fifth,
-            friday,
-            saturday
+        if(officeName != null && officeName != 'user' && officeName != 'User'){
+            const data ={
+                monday,
+                tuesday,
+                fourth,
+                fifth,
+                friday,
+                saturday
+            }
+            console.log(data)
+            try{
+                await api.post(`training/${userId}`, data);
+    
+                alert(`Treino atuaizado com sucesso!`);
+                history.push('/semana');
+            }catch(err){
+                alert('Erro no cadastro do treino, tente novamente!')
+            }
+        }else{
+            alert(`Somente funcionários cadastrados podem registrar treinos!`)
         }
-        console.log(data)
-        try{
-            await api.post(`training/${userId}`, data);
-
-            alert(`Treino atuaizado com sucesso!`);
-            history.push('/semana');
-        }catch(err){
-            alert('Erro no cadastro do treino, tente novamente!')
-        }
+       
     }
 
     return(

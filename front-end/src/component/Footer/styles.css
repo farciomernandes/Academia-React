@@ -70,7 +70,7 @@ footer{
     display: block;
     background: none;
     position: relative;
-    left: 940px;
+    left: 900px;
     width: 50vw;
     bottom: 1px;
 }
@@ -110,7 +110,7 @@ footer{
     height: 20vh;
     position: relative;
     bottom: 40px;
-    left: 200px;
+    left: 220px;
 }
 .end h1{
     font-size: 25px;

@@ -9,19 +9,19 @@ export default function HeadeWeb(props){
     const history = useHistory();
     
     function logout(){
-        localStorage.setItem('sessionId', null);
-        localStorage.setItem('sessionName', 'user');
+        localStorage.removeItem('sessionId');
+        localStorage.removeItem('sessionName');
         history.push('/')
    }
 
     return(
-        <header>
+        <div className="todo">
             <div className="divSolo">
 
             <section>
             <Link to="/" className="BioFit"><h1>Bio<span> Fitness</span></h1></Link>
             </section>
-            <button onClick={logout}>Exit my count</button>
+            <button className="btn-exit" onClick={logout}>Exit my count</button>
            </div>
 
             <nav>
@@ -34,6 +34,6 @@ export default function HeadeWeb(props){
             </nav>
             <hr style={{height: 12}} style={{background: 'none'}}/>
             <p>Welcome<span>{props.name}</span></p>
-        </header>
+        </div>
     );
 }

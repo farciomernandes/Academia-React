@@ -13,12 +13,12 @@ function logoutt(){
 
    
     return(
-        <header>
+        <div className="topo">
             <div className="divSolo">
 
             <section>
             <Link to="/office" className="BioFit"><h1>Bio<span> Fitness</span></h1></Link>
-            <button className="topoo" onClick={logoutt}>Exit my acount</button>
+            <button className="btn-exitt" onClick={logoutt}>Exit my acount</button>
             </section>
            </div>
 
@@ -30,6 +30,6 @@ function logoutt(){
             </nav>
             <hr style={{height: 12}} style={{background: 'none'}}/>
             <p>Welcome<span>{props.name}</span></p>
-        </header>
+        </div>
     );
 }
