@@ -8,8 +8,8 @@ function BMI(){
     
     const [ativo, setAtivo] = useState('none')
     const [bmic, setBMIC] = useState(0);
-    const [peso, setPeso] = useState(0); 
-    const [altura, setAltura] = useState(0); 
+    const [peso, setPeso] = useState('Peso'); 
+    const [altura, setAltura] = useState('Altura'); 
     
     function calcular(){ 
         let resultado = peso / (Math.pow(altura,2 ))
@@ -60,7 +60,7 @@ function BMI(){
                     </tr>
                 </table>
                 </section>
-                <section>
+                <section className="tabela">
                <span><h2>CHECK YOUR BODY</h2></span>
                 <h1>BMI CALCULATOR</h1>
                 <p>BMI is the acronym for Body Mass Index that serves to assess the individual's 
@@ -68,6 +68,7 @@ function BMI(){
                     ideal weight, above or below the desired weight.</p>
                     
                     <form>
+                    <div>
                     <input
                      value={altura}
                      onChange={e => setAltura(e.target.value)}
@@ -82,7 +83,7 @@ function BMI(){
                     <input name="idade" placeholder="Idade"/>
                     
                     <input name="sexo" placeholder="Sexo"/>
-                    
+                    </div>
                     <button type="button" className="btn-bmi" onClick={calcular}>CALCULATE</button>
                     </form>
                 </section>

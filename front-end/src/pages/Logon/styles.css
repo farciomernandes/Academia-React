@@ -70,5 +70,6 @@
     background: none;
     width: 100%;
     max-width: 100px;
-    margin: 1% 0% 0% 32%;
+    position: relative;
+    right: 49px;
 }

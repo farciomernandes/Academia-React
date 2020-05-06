@@ -1,42 +1,21 @@
-*{
-    font-family: sans-serif;
-    list-style: none;
-    padding: 0; 
-}
-
 .header{
     background-image: url(../../assets/with\ us.jpg);
-}
-.header hr{
-    background: none;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-size: 70px;
-    height: 100%;
-    min-height: 150px;
-    max-height: 600;
+    height: 100vh;
 }
 .header h2{
-    margin: 15% 0% 0% 0%;
     background: none;
     display: flex;
     text-align: center;
     justify-content: center;
     font-size: 50px;
     color: #FFFFFF;
+    position: relative;
+    top: 30px;
 }
 span{
     background: none;
     margin: 0% 0% 0% 1%;
 }
-hr{
-    border: 0px;
-    height: 100px;
-}
-
-/******************************/
-
 .Container{
     float: left;
     height: 400px;
@@ -51,7 +30,6 @@ hr{
     float: left;
 
     height: 340px;
-    background-image: url(../../assets/music1.jpg);
 }
 .Container .Item2{
     float: right;
@@ -108,23 +86,23 @@ hr{
     background: #2187e7b3;
 }
 .fisico{
-    width: 90%;
-    animation: fisico 2s; 
+    width: 95%;
+    animation: fisico 3s; 
 }
 .postura{
-    width: 40%;
-    animation: postura 2s;
+    width: 85%;
+    animation: postura 3s;
 }
 .dedicaçao{
-    width: 80%;
-    animation: dedicaçao 2s;
+    width: 98%;
+    animation: dedicaçao 3s;
 }
 @keyframes fisico{
     0%{
         width: 0%;
     }
     100%{
-        width: 90%;
+        width: 95%;
     }
 }
 @keyframes postura{
@@ -132,7 +110,7 @@ hr{
         width: 0%;
     }
     100%{
-        width: 40%;
+        width: 80%;
     }
 }
 @keyframes dedicaçao{
@@ -140,37 +118,49 @@ hr{
         width: 0%;
     }
     100%{
-        width: 80%;
+        width: 90%;
     }
 }
 
 /************************************************/
 
 .NomeFlutuante{
-    margin: 42% 10% 5% 9%;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    left: 550px;
+    top: 30px;
+}
+
+.team{
     background: none;
     display: flex;
     text-align: center;
-    justify-content: center;
-}
-.team{
-    display: flex;
-    justify-content: center;
+    justify-content: center; 
+    position: relative;
+    top: 40px;
 }
 .ImagemTeam{
     width: 215px;
     height: 300px;
-    margin: 40px;
-    position: relative;
+    justify-content: center;
     text-align: center;
 }
+.team div{
+    border: table;
+    right: 40px;
+    position: relative;
+    margin: 2%;
+    margin-left: 5%;
+    top: 20px;
+}
 .team h4{
-    margin: -10% 20% 0% 20%;
     background: none;
     display: flex;
     text-align: center;
     justify-content: center;
     color: #FFFFFF;
+    position: relative;
 }
 .team span{
     margin: 2% 20% 0% 20%;

@@ -31,11 +31,10 @@ export default function HomeWeb(){
 
 
                 </div>
-               
             </section>
             <section className="text">
             <div>
-                <h2 className="name-blue">WHAT'S SPECIAL?</h2>              
+                <h2 className="special-blue">WHAT'S SPECIAL?</h2>              
                 <p>THE EVOLUTION OF OUR CUSTOMERS COMES FIRST</p>
             </div>
                 </section>
@@ -85,7 +84,7 @@ export default function HomeWeb(){
                 <p>2 Daily Hours</p>
                 <p>All Equipment</p>
                 <img src={photo} alt="imagemStatica"/>
-                <button>Enroll Now</button>
+                <button className="btn-bottom">Enroll Now</button>
             </div>
             </a>
             <a href="#">

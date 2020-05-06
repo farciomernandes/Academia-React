@@ -16,13 +16,13 @@ export default function Obout () {
             <div className="header">
             <Head name={user}></Head> 
                 <h2>OBOUT <span> US</span></h2>
-
-                <hr />
             </div>
-
-
             <div className="Container">
-                <div className="Item1"></div>
+                <div className="Item1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ALZHF5UqnU4" 
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                 picture-in-picture" allowfullscreen></iframe>
+                </div>
 
                 <div className="Item2">
                     <h2>ABOUT US</h2>
@@ -44,8 +44,9 @@ export default function Obout () {
                     </li>
                 </div>
             </div>
-
+            
             <div className="NomeFlutuante"><h1>Our Team</h1></div>
+
             <div className="team">
                 <div>
                     <img className="ImagemTeam" src={professional1} alt=""/>
@@ -76,11 +77,6 @@ export default function Obout () {
                 </div>
 
             </div>
-
-            <div className="Customers">
-                <h2>Customer <span> Testimonials</span></h2>
-            </div>
-        
         <Foooter />
         </div>
     );

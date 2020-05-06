@@ -9,6 +9,11 @@ h1{
 span{
     color: #1071A8;
 }
+header p{
+    position: absolute;
+    top: 250px;
+    width: 100%;
+}
 .BioFit{
     opacity: 1;
 }
@@ -60,6 +65,8 @@ nav{
     justify-content: center;
     background: none;
     margin: 0 auto;
+    position: absolute;
+    top: 150px;
 }
 a{
     font-size: 20px;

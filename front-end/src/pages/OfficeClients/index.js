@@ -80,8 +80,6 @@ export default function OfficeClient(){
                         <br /> Email: {clients.email}                
                         <br />Telefone: {clients.tell}
                     </div>
-                        
-                     
                 ))}
             </div>
           </div>

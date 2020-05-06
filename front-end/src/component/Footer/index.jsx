@@ -28,7 +28,6 @@ export default function Foooter(){
             </div>
             </section>
           <footer>
-
               <div className="end">    
               <a href="#"><h1 className="bio">Bio<span> Fitness</span></h1></a>       
               <p className="copy">Copyright ©2020 All rights reserved |
@@ -50,7 +49,6 @@ export default function Foooter(){
                </div>
             </div>
           </footer>
-
         </div>
     );
 }
